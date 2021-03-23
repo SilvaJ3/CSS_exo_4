@@ -11,7 +11,7 @@ section {
 h2 {
   background-color: yellow;
   border: solid black 2px;
-  height: 300px;
+  font-size: 50px;
 }
 
 .tartineMargin {
@@ -40,8 +40,8 @@ h2 {
 
 /* exo display */
 .SectionMargPad {
-  margin: 30px;
-  padding: 30px;
+  margin: 25px;
+  padding: 25px;
 }
 
 .tartineDisplay, .androidDisplay {
@@ -59,8 +59,11 @@ h2 {
 
 .tartineFloat, .androidFloat {
   width: auto;
-  float: inherit;
-  overflow: auto;
+  float: left;
+}
+
+.over {
+  overflow: visible ;
 }
 
 /* fin exo float */
@@ -68,12 +71,16 @@ h2 {
 /* exo position */
 
 .tartinePosition {
-  position: fixed;
+  position: absolute;
   background-color: green;
   margin: 0;
   top: 0;
   top: 50%;
   left: 50%;
+}
+
+.relative {
+  position: relative;
 }
 
 /* fin exo position */
@@ -83,11 +90,14 @@ h2 {
 .androidPosition {
   background-color: blue;
   margin-left: 100px;
-  position: absolute;
 }
 
 .tartinePosition2 {
-  position: fixed;
+  z-index: -1;
+}
+
+.abso {
+  position: absolute;
 }
 
 /* fin exo position (priorité) */
